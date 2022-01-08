@@ -1,0 +1,10 @@
+<sly data-sly-test="${wcmmode.edit}">
+    <div class="alert alert-warning">Spa Demo :: Checkout Component</div>
+</sly>
+<sly data-sly-use.model="com.spademo.core.models.Checkout" ></sly>
+<eaton-checkout data-sly-test="${model.shouldRender}"
+            title="${model.title}"
+                summary="${model.summaryTitle}"
+                helptext ="${model.helpText}"
+>
+</eaton-checkout>
