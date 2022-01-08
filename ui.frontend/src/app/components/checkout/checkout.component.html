@@ -1,0 +1,27 @@
+<div class="container">
+    <div class="row">
+        <div class="col-9">
+            <h3>{{title}}</h3>
+            <div class="items">
+                <ul *ngIf="cartItems.length >0">
+                    <li *ngFor="let cartItem of cartItems">
+                        <div class="card">
+                            <img [src]="cartItem.image" />
+                            <span>{{cartItem.title}}</span>
+                            <p>Category: {{cartItem.category}}</p>
+                            <p>Developer: {{cartItem.developer}}</p>
+                            <p>Unit Price: {{cartItem.unitPrice}}</p>
+                            <p>Price: {{cartItem.price}}</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-3">
+            <div class="order-summary">
+                <h4>{{summary}}</h4>
+            </div>
+            <span>{{helptext}}</span>
+        </div>
+    </div>
+</div>
